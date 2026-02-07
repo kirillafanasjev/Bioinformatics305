@@ -1,0 +1,15 @@
+commit ff024c48331ddbdafcb8c18056f8da0d29a0c262
+Author: kirill <afanasev.ka@phystech.edu>
+Date:   Sat Feb 7 23:23:51 2026 +0300
+
+    Revert "[Add] file_for_commit.sh"
+    
+    This reverts commit 92c7b750e49f42465557f886af0094b5077cea59.
+
+diff --git a/task1/scripts/file_for_commit.sh b/task1/scripts/file_for_commit.sh
+deleted file mode 100644
+index 5c88cf0..0000000
+--- a/task1/scripts/file_for_commit.sh
++++ /dev/null
+@@ -1 +0,0 @@
+-file for commit
