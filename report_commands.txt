@@ -1,0 +1,85 @@
+  150  git init
+  151  sudo apt install git
+  152  git init
+  154  sudo apt install git
+  155  git init
+  157  sudo apt install git
+  158  git init
+  160  git add test
+  161  git status
+  162  git commit -m "[Add] test"
+  163  git config user.email "afanasev.ka@phystech.edu"
+  164  git config user.name "kirill"
+  165  git commit -m "[Add] test"
+  166  git branch -M main
+  167  git remote add origin git@github.com:kirillafanasjev/bioinf_2026.git
+  168  git push -u origin main
+  315  git checkout -b develop 
+  326  git add task1/data/samples.tsv
+  327  git commit -m "[Add] samples.tsv"
+  328  git log --oneline -3
+  329  git show --stat
+  330  git remote -v
+  331  git checkout main
+  333  В данном файле напишем разницу между "git log" и "git show"
+  334  Отметим, что "git log" показывает историю коммитов в виде списка в хронологическом порядке от последнего к первому.
+  335  А "git show" показывает информацию об одном коммите, причем последнем (по умолчанию). Также отображает подробную информацию и изменения.
+  336  Таким образом, главное отличие в том, что "git log" можно использовать для просмотра истории коммитов, а "git show" для просмотра изменений в последнем (или заданном).
+  339  git add diff.file
+  340  git commit -m "[Add] diff.file"
+  341  git push origin main
+  342  git checkout develop
+  351  git add task1/scripts/file_for_commit.sh
+  352  git commit -m "[Add] file_for_commit.sh"
+  353  git log --oneline -3
+  354  git revert HEAD --no-edit
+  355  git show HEAD > revert_output.txt
+  360  git add revert_show_output.txt
+  361  git commit -m "[Add] revert_show_output.txt"
+  362  git push origin develop
+  363  git clone https://github.com/Weakne55/Bioinformatics305.git
+  366  git remote remove origin
+  367  git remote add origin https://github.com/kirillafanasjev/bioinf_2026.git
+  370  git add -u
+  371  git commit -m "Cleanup temp files"
+  372  git config --global user.name "Kirill Afanasjev"
+  373  git config --global user.email "afanasev.ka@phystech.edu"
+  374  git commit -m "Cleanup temp files"
+  375  git status
+  376  git log --online
+  377  git log --oneline
+  380  git checkout -b investigation
+  381  git add infected_reads.txt
+  382  git commit -m "Add infected_reads"
+  387  git add mini_run.fastq
+  388  git commit -m "Add mini_run.fastq contain first and last 50 lines"
+  392  git status
+  393  git checkout ./lab_disaster/experiment.log
+  394  git status
+  395  echo "git checkout ./lab_disaster/experiment.log" > command.txt
+  397  git checkout master
+  398  git add command.txt
+  399  git commit -m "Add command.txt with command to restore experiment.log"
+  400  git status
+  409  git add access.log sort.txt
+  410  git commit -m "Add access.log and sort.txt"
+  411  git merge investigation -m "Merge investigation branch to main"
+  415  git add genes.tsv genes_fixed.csv
+  416  git commit -m "Add genes.tsv and genes_fixed.csv"
+  421  git checkout -b cleaning
+  422  git add diskusage.file
+  423  git commit -m "Add disk usage report file"
+  424  git checkout main
+  425  git checkout master
+  426  git branch
+  428  git add task_8_file.txt
+  429  git commit -m "Add task_8_file"
+  430  git log --oneline -1 | cut -c1-4 > hash.txt
+  433  git add forgotten.txt
+  434  git commit --amend --no-edit
+  435  git log --oneline -5
+  437  git add amend.txt hash.txt forgottrn.txt
+  438  git add amend.txt hash.txt forgotten.txt
+  439  git commit -m "Add amend.txt with explanation and related files"
+  440  git log --oneline -5
+  441  history | grep git > report_commands.txt
