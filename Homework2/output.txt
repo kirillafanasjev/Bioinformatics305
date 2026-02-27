@@ -1,0 +1,8 @@
+./greeter.sh Ivan
+Error: Not enough arguments provided
+
+./greeter.sh Ivan Ivanov
+Error: Not enough arguments provided
+
+./greeter.sh Ivan Ivanov Bio305
+Welcome, Ivan Ivanov from group Bio305!
